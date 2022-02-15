@@ -1,0 +1,9 @@
+.footerStyle {
+  padding: var(--space-2xl) var(--space-xl);
+  gap: var(--space-xl);
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  color: var(--text-color-secondary);
+  margin-top: var(--space-3xl);
+}
