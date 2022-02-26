@@ -25,6 +25,14 @@ export default function ProductTypeIndex({
   );
 }
 
+export async function config() {
+  return ({ params }) => {
+    return {
+      defer: true,
+    };
+  };
+}
+
 export const query = graphql`
     query($productType: String!) {
         products: allShopifyProduct(
