@@ -214,14 +214,6 @@ export default function Product({ data: { product, suggestions } }) {
   );
 }
 
-export async function config() {
-  return ({ params }) => {
-    return {
-      defer: true,
-    };
-  };
-}
-
 export const query = graphql`
     query($id: String!, $productType: String!) {
         product: shopifyProduct(id: { eq: $id }) {
